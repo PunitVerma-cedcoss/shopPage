@@ -1,0 +1,203 @@
+* {
+  outline: none !important;
+}
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.logo {
+  font-weight: lighter;
+}
+.text-primary {
+  color: orangered !important;
+}
+.bg-primary {
+  background-color: orangered !important;
+}
+.bg-secondary {
+  background-color: pink !important;
+}
+.searchinput::placeholder {
+  color: rgba(68, 68, 68, 0.459);
+}
+.cart .badge {
+  font-size: 0.6rem;
+  top: 0;
+  right: 0;
+  margin-right: 15%;
+}
+.loading {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  right: 0;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: pink;
+}
+::-webkit-scrollbar-thumb {
+  background-color: orangered;
+}
+.hide {
+  display: none !important;
+}
+.bold {
+  font-weight: 600 !important;
+  letter-spacing: 1px;
+}
+.active {
+  border: 2px solid white;
+}
+.fa-circle {
+  font-size: 0.5rem;
+}
+.h-50 {
+  height: 50vh !important;
+}
+.carousel-item {
+  border: none !important;
+}
+.bg-transparent {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.cborder {
+  border: 2px solid white !important;
+}
+.border-primary {
+  border: 2px solid orangered !important;
+}
+.imageCard {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.imageDiv {
+  background-image: url("https://source.unsplash.com/1920x1080/?poster");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.vignette {
+  box-shadow: 10px 20px 100px black inset;
+}
+/* for medium screens or landscapes */
+@media only screen and (max-width: 805px) and (min-width: 405px) {
+  .signin {
+    font-size: 0.7rem;
+  }
+  #demo1 .row .col:nth-child(1),
+  #demo1 .row .col:nth-child(2) {
+    display: none !important;
+  }
+  .imageCard button {
+    padding: 2px 5px 2px 5px !important;
+  }
+  .showcase .col-md-3:nth-child(1),
+  .showcase .col-md-3:nth-child(2) {
+    /* background-color: red; */
+    display: none !important;
+  }
+  .btn-groups button {
+    padding: 2px 10px 2px 10px !important;
+  }
+  .nav-item {
+    font-size: 0.7rem;
+  }
+  .details .py-3 {
+    padding: 0 !important;
+  }
+  .details button {
+    margin-top: 5px !important;
+  }
+}
+/* for mobile screens */
+@media only screen and (max-width: 600px) {
+  #demo {
+    padding-top: 40px;
+  }
+  .ccard {
+    margin-bottom: 10px;
+  }
+  .nav2 {
+    display: none !important;
+  }
+  #demo1 .row .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #demo1 .row .col:not(:first-child) {
+    display: none !important;
+  }
+  .search {
+    margin-top: 10px;
+  }
+  #demo img {
+    height: 300px !important;
+  }
+  .citem {
+    flex-direction: column;
+  }
+  .citem .details {
+    margin-top: 5px;
+    /* font-size: 0.9rem; */
+  }
+  .details .py-3 {
+    padding: 0 !important;
+  }
+  .details button {
+    margin-top: 5px !important;
+  }
+  .sidePoster {
+    margin-top: 10px !important;
+  }
+  .sidePoster .imageDiv {
+    padding: 20px !important;
+  }
+  .showcase .col-2:nth-child(odd) {
+    display: none !important;
+  }
+  .is-mobile {
+    display: none !important;
+  }
+  .newsletter {
+    min-width: 70%;
+  }
+  .imageCard {
+    /* font-size: 0.5rem; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .btn-groups button {
+    margin-top: 10px;
+  }
+  .cctitle {
+    flex-direction: column;
+  }
+  .cctitle .btn-groups {
+    font-size: 0.5rem;
+  }
+}
+
+/* animations */
+.pulsate-fwd {
+  animation: pulsate-fwd 0.5s ease-in-out infinite both;
+}
+@keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
